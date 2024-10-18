@@ -1,4 +1,4 @@
-# openai-webpage-summarizer
+# OpenAI Web Brochure Maker
 
 Sign up for OpenAI
 https://platform.openai.com/docs/overview
