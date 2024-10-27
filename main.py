@@ -48,7 +48,7 @@ def stream_gpt(prompt):
         {"role": "user", "content": prompt}
       ]
     stream = openai.chat.completions.create(
-        model='gpt-4o-mini',
+        model=OPENAI_MODEL,
         messages=messages,
         stream=True
     )
@@ -59,7 +59,7 @@ def stream_gpt(prompt):
 
 def stream_claude(prompt):
     result = claude.messages.stream(
-        model="claude-3-haiku-20240307",
+        model=CLAUDE_MODEL,
         max_tokens=1000,
         temperature=0.7,
         system=system_prompt,
